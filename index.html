@@ -1,642 +1,672 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhishek Gupta — Android Developer</title>
-<meta name="description" content="Abhishek Gupta — Android Developer. Kotlin, Jetpack Compose, MVVM, Firebase. Portfolio of Android applications and case studies.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Gupta — Android Developer</title>
+    <meta
+      name="description"
+      content="Abhishek Gupta — Android Developer. Kotlin, Jetpack Compose, MVVM, Firebase. Portfolio of Android applications and case studies."
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#top" class="nav__brand"
+          >Abhishek Gupta<span class="nav__dot">.</span></a
+        >
 
-<!-- ============ NAVBAR ============ -->
-<header class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#top" class="nav__brand">Abhishek Gupta<span class="nav__dot">.</span></a>
+        <nav class="nav__links" id="navLinks">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#contact" class="nav__link">Contact</a>
+          <a
+            href="https://github.com/androidwithabhishek"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--sm btn--ghost-dark nav__github"
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+              />
+            </svg>
+            GitHub
+          </a>
+        </nav>
 
-    <nav class="nav__links" id="navLinks">
-      <a href="#about" class="nav__link">About</a>
-      <a href="#projects" class="nav__link">Projects</a>
-      <a href="#experience" class="nav__link">Experience</a>
-      <a href="#contact" class="nav__link">Contact</a>
-      <a href="https://github.com/androidwithabhishek" target="_blank" rel="noopener" class="btn btn--sm btn--ghost-dark nav__github">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/></svg>
-        GitHub
-      </a>
-    </nav>
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow">
+              <span class="eyebrow__dot"></span>Available for opportunities
+            </p>
+            <h1 class="hero__title">Abhishek Gupta</h1>
+            <p class="hero__role">Android Developer</p>
+            <p class="hero__desc">
+              I build Android applications with a focus on smooth, user-friendly
+              experiences and clean, maintainable code. Based in Uttar Pradesh,
+              India.
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
+              <a
+                href="https://github.com/androidwithabhishek"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--ghost"
+                >GitHub</a
+              >
+              <a href="#contact" class="btn btn--ghost">Contact</a>
+            </div>
+          </div>
 
-<main id="top">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="hero__inner">
-      <div class="hero__copy">
-        <p class="eyebrow"><span class="eyebrow__dot"></span>Available for opportunities</p>
-        <h1 class="hero__title">Abhishek Gupta</h1>
-        <p class="hero__role">Android Developer</p>
-        <p class="hero__desc">
-          I build Android applications with a focus on smooth, user-friendly experiences and clean, maintainable code. Based in Uttar Pradesh, India.
-        </p>
-        <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary">View Projects</a>
-          <a href="https://github.com/androidwithabhishek" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
-          <a href="#contact" class="btn btn--ghost">Contact</a>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="code-card">
+              <div class="code-card__bar">
+                <span class="dot dot--red"></span
+                ><span class="dot dot--yellow"></span
+                ><span class="dot dot--green"></span>
+                <span class="code-card__filename">Developer.kt</span>
+              </div>
+              <pre
+                class="code-card__body"
+              ><code id="typedCode"></code><span class="code-cursor" id="codeCursor">&nbsp;</span></pre>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="hero__visual" aria-hidden="true">
-        <div class="code-card">
-          <div class="code-card__bar">
-            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
-            <span class="code-card__filename">Developer.kt</span>
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section">
+        <div class="section__inner section__inner--split">
+          <div class="section__head">
+            <p class="kicker">01 · About</p>
+            <h2 class="section__title">
+              Focused on scalable,<br />maintainable Android apps.
+            </h2>
           </div>
-          <pre class="code-card__body"><code id="typedCode"></code><span class="code-cursor" id="codeCursor">&nbsp;</span></pre>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="section">
-    <div class="section__inner section__inner--split">
-      <div class="section__head">
-        <p class="kicker">01 · About</p>
-        <h2 class="section__title">Focused on scalable,<br>maintainable Android apps.</h2>
-      </div>
-      <div class="about__body">
-        <p>
-          Android Developer with professional experience building Android applications using
-          Kotlin and modern Android technologies. Experienced with Jetpack Compose, MVVM, Room,
-          Retrofit, Coroutines, Firebase and REST APIs, with a focus on scalable, maintainable
-          and user-focused applications.
-        </p>
-        <div class="about__facts">
-          <div class="fact">
-            <span class="fact__label">Location</span>
-            <span class="fact__value">Uttar Pradesh, India</span>
-          </div>
-          <div class="fact">
-            <span class="fact__label">Role</span>
-            <span class="fact__value">Android Developer</span>
-          </div>
-          <div class="fact">
-            <span class="fact__label">Focus</span>
-            <span class="fact__value">Kotlin &amp; Jetpack Compose</span>
+          <div class="about__body">
+            <p>
+              Android Developer with professional experience building Android
+              applications using Kotlin and modern Android technologies.
+              Experienced with Jetpack Compose, MVVM, Room, Retrofit,
+              Coroutines, Firebase and REST APIs, with a focus on scalable,
+              maintainable and user-focused applications.
+            </p>
+            <div class="about__facts">
+              <div class="fact">
+                <span class="fact__label">Location</span>
+                <span class="fact__value">Uttar Pradesh, India</span>
+              </div>
+              <div class="fact">
+                <span class="fact__label">Role</span>
+                <span class="fact__value">Android Developer</span>
+              </div>
+              <div class="fact">
+                <span class="fact__label">Focus</span>
+                <span class="fact__value">Kotlin &amp; Jetpack Compose</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============ PROJECTS ============ -->
-<section id="projects" class="section">
-  <div class="section__inner">
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section">
+        <div class="section__inner">
+          <p class="kicker">03 · Projects</p>
 
-    <p class="kicker">03 · Projects</p>
+          <h2 class="section__title">Selected work.</h2>
 
-    <h2 class="section__title">Selected work.</h2>
+          <p class="section__sub">
+            Every project below is pulled straight from my GitHub — click
+            through for source code. Published apps are marked with their
+            current availability or testing status.
+          </p>
 
-    <p class="section__sub">
-      Every project below is pulled straight from my GitHub — click through for source code.
-      Published apps are marked with their current availability or testing status.
-    </p>
-
-    <div class="projects-grid">
-
-      <!-- =====================================================
+          <div class="projects-grid">
+            <!-- =====================================================
            Project 1: Dev Control
            ===================================================== -->
-      <article class="project-card project-card--testing">
+            <article class="project-card project-card--testing">
+              <a
+                class="project-card__media"
+                href="https://github.com/androidwithabhishek/my-res"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/androidwithabhishek/my-res/main/dev_control/screen_shots/1.jpeg"
+                  alt="Dev Control Android app screenshot"
+                  loading="lazy"
+                  style="
+                    object-fit: contain !important;
+                    object-position: center !important;
+                  "
+                />
 
-        <a
-          class="project-card__media"
-          href="https://github.com/androidwithabhishek/my-res"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/androidwithabhishek/my-res/main/dev_control/screen_shots/1.jpeg"
-            alt="Dev Control Android app screenshot"
-            loading="lazy"
-            style="object-fit: contain !important; object-position: center !important;"
-          >
+                <!-- Google Play badge -->
+                <span class="store-badge" aria-label="Google Play">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M3.3 2.7c-.2.3-.3.7-.3 1.2v16.2c0 .5.1.9.3 1.2l9.1-9.3L3.3 2.7Z"
+                    />
+                    <path
+                      d="m13.3 11.4 2.4-2.5-10.5-5.9c-.4-.2-.8-.3-1.2-.3l9.3 8.7Z"
+                    />
+                    <path
+                      d="m13.3 12.6-9.3 8.7c.4 0 .8-.1 1.2-.3l10.5-5.9-2.4-2.5Z"
+                    />
+                    <path
+                      d="m16.6 14.4 3.4-1.9c.5-.3.7-.7.7-1s-.2-.7-.7-1l-3.4-1.9-2.6 2.9 2.6 2.9Z"
+                    />
+                  </svg>
+                  <span>Google Play</span>
+                </span>
 
-          <!-- Google Play badge -->
-          <span class="store-badge" aria-label="Google Play">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M3.3 2.7c-.2.3-.3.7-.3 1.2v16.2c0 .5.1.9.3 1.2l9.1-9.3L3.3 2.7Z"/>
-              <path d="m13.3 11.4 2.4-2.5-10.5-5.9c-.4-.2-.8-.3-1.2-.3l9.3 8.7Z"/>
-              <path d="m13.3 12.6-9.3 8.7c.4 0 .8-.1 1.2-.3l10.5-5.9-2.4-2.5Z"/>
-              <path d="m16.6 14.4 3.4-1.9c.5-.3.7-.7.7-1s-.2-.7-.7-1l-3.4-1.9-2.6 2.9 2.6 2.9Z"/>
-            </svg>
-            <span>Google Play</span>
-          </span>
+                <!-- Testing status -->
+                <span class="status-pill"> Currently in Testing </span>
+              </a>
 
-          <!-- Testing status -->
-          <span class="status-pill">
-            Currently in Testing
-          </span>
-        </a>
+              <div class="project-card__body">
+                <div class="project-card__top">
+                  <div class="project-card__title-wrap">
+                    <h3 class="project-card__title">Dev Control</h3>
 
-        <div class="project-card__body">
+                    <span class="project-card__status"> Testing period </span>
+                  </div>
 
-          <div class="project-card__top">
+                  <a
+                    href="https://github.com/androidwithabhishek/my-res"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="Open Dev Control project on GitHub"
+                  >
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-            <div class="project-card__title-wrap">
+                <p class="project-card__desc">
+                  An Android developer utility for managing and controlling
+                  developer-focused device settings, built for a clean and
+                  practical workflow.
+                </p>
 
-              <h3 class="project-card__title">
-                Dev Control
-              </h3>
+                <ul class="project-card__features">
+                  <li>Built with Kotlin &amp; Jetpack Compose</li>
+                  <li>Developer-focused device controls</li>
+                  <li>Currently in the testing period</li>
+                  <li>Google Play testing release</li>
+                </ul>
+              </div>
+            </article>
 
-              <span class="project-card__status">
-                Testing period
-              </span>
-
-            </div>
-
-            <a
-              href="https://github.com/androidwithabhishek/my-res"
-              target="_blank"
-              rel="noopener"
-              class="icon-link"
-              aria-label="Open Dev Control project on GitHub"
-            >
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/>
-              </svg>
-            </a>
-
-          </div>
-
-          <p class="project-card__desc">
-            An Android developer utility for managing and controlling
-            developer-focused device settings, built for a clean and
-            practical workflow.
-          </p>
-
-          <ul class="project-card__features">
-            <li>Built with Kotlin &amp; Jetpack Compose</li>
-            <li>Developer-focused device controls</li>
-            <li>Currently in the testing period</li>
-            <li>Google Play testing release</li>
-          </ul>
-
-        </div>
-      </article>
-
-
-
-
-<!-- =====================================================
+            <!-- =====================================================
            Project 2: Image Search App
            ===================================================== -->
-      <article class="project-card">
+            <article class="project-card">
+              <a
+                class="project-card__media"
+                href="https://github.com/androidwithabhishek/Image-Search-App"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/androidwithabhishek/my-res/main/image_search/1.jpeg"
+                  alt="Image Search App"
+                  loading="lazy"
+                  style="
+                    object-fit: contain !important;
+                    object-position: center !important;
+                  "
+                />
+              </a>
 
-        <a
-          class="project-card__media"
-          href="https://github.com/androidwithabhishek/Image-Search-App"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/androidwithabhishek/my-res/main/image_search/1.jpeg"
-            alt="Image Search App"
-            loading="lazy"
-            style="object-fit: contain !important; object-position: center !important;"
-          >
-        </a>
+              <div class="project-card__body">
+                <div class="project-card__top">
+                  <h3 class="project-card__title">Image Search App</h3>
 
-        <div class="project-card__body">
+                  <a
+                    href="https://github.com/androidwithabhishek/Image-Search-App"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="View Image Search App on GitHub"
+                  >
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-          <div class="project-card__top">
+                <p class="project-card__desc">
+                  An Android image search app powered by the Unsplash API,
+                  featuring image discovery, preview, zoom, downloads,
+                  bookmarks, and offline caching.
+                </p>
 
-            <h3 class="project-card__title">
-              Image Search App
-            </h3>
+                <ul class="project-card__features">
+                  <li>Infinite scrolling with Paging 3</li>
+                  <li>Offline caching and bookmarks with Room</li>
+                  <li>Shimmer loading states and dark mode</li>
+                  <li>Dependency injection with Hilt</li>
+                </ul>
+              </div>
+            </article>
 
-            <a
-              href="https://github.com/androidwithabhishek/Image-Search-App"
-              target="_blank"
-              rel="noopener"
-              class="icon-link"
-              aria-label="View Image Search App on GitHub"
-            >
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/>
-              </svg>
-            </a>
-
-          </div>
-
-          <p class="project-card__desc">
-            An Android image search app powered by the Unsplash API,
-            featuring image discovery, preview, zoom, downloads,
-            bookmarks, and offline caching.
-          </p>
-
-          <ul class="project-card__features">
-            <li>Infinite scrolling with Paging 3</li>
-            <li>Offline caching and bookmarks with Room</li>
-            <li>Shimmer loading states and dark mode</li>
-            <li>Dependency injection with Hilt</li>
-          </ul>
-
-        </div>
-      </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- =====================================================
+            <!-- =====================================================
            Project 3: Google MediaPipe
            NOTE: No inline object-fit style, as requested.
            ===================================================== -->
-      <article class="project-card">
+            <article class="project-card">
+              <a
+                class="project-card__media"
+                href="https://github.com/androidwithabhishek/Google-Mediapipe"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/mediapipe.jpg"
+                  alt="Google MediaPipe app screenshot — real-time hand landmark tracking"
+                  loading="lazy"
+                />
+              </a>
 
-        <a
-          class="project-card__media"
-          href="https://github.com/androidwithabhishek/Google-Mediapipe"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="images/mediapipe.jpg"
-            alt="Google MediaPipe app screenshot — real-time hand landmark tracking"
-            loading="lazy"
-          >
-        </a>
+              <div class="project-card__body">
+                <div class="project-card__top">
+                  <h3 class="project-card__title">Google MediaPipe</h3>
 
-        <div class="project-card__body">
+                  <a
+                    href="https://github.com/androidwithabhishek/Google-Mediapipe"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="Open Google MediaPipe project on GitHub"
+                  >
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-          <div class="project-card__top">
+                <p class="project-card__desc">
+                  An Android app demonstrating Google MediaPipe's Hand
+                  Landmarker — detecting and tracking hands from the live camera
+                  feed in real time.
+                </p>
 
-            <h3 class="project-card__title">
-              Google MediaPipe
-            </h3>
+                <ul class="project-card__features">
+                  <li>Real-time hand detection &amp; landmark tracking</li>
+                  <li>Live camera-based processing</li>
+                  <li>MediaPipe Tasks Vision integration</li>
+                </ul>
+              </div>
+            </article>
 
-            <a
-              href="https://github.com/androidwithabhishek/Google-Mediapipe"
-              target="_blank"
-              rel="noopener"
-              class="icon-link"
-              aria-label="Open Google MediaPipe project on GitHub"
-            >
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/>
-              </svg>
-            </a>
-
-          </div>
-
-          <p class="project-card__desc">
-            An Android app demonstrating Google MediaPipe's Hand Landmarker —
-            detecting and tracking hands from the live camera feed in real time.
-          </p>
-
-          <ul class="project-card__features">
-            <li>Real-time hand detection &amp; landmark tracking</li>
-            <li>Live camera-based processing</li>
-            <li>MediaPipe Tasks Vision integration</li>
-          </ul>
-
-        </div>
-      </article>
-
-
-
-
-
-
-
-
-     <!-- =====================================================
-     Project 3: AI D-Scanner App
-     ===================================================== -->
-<article class="project-card">
-
-  <a
-    class="project-card__media"
-    href="https://github.com/androidwithabhishek/AI-Dscanner-App"
-    target="_blank"
-    rel="noopener"
-  >
-    <img
-      src="https://raw.githubusercontent.com/androidwithabhishek/AI-Dscanner-App/main/screenshots/third.jpg"
-      alt="AI D-Scanner App screenshot"
-      loading="lazy"
-      style="object-fit: contain !important; object-position: center !important;"
-    >
-  </a>
-
-  <div class="project-card__body">
-
-    <div class="project-card__top">
-
-      <h3 class="project-card__title">
-        AI D-Scanner App
-      </h3>
-
-      <a
-        href="https://github.com/androidwithabhishek/AI-Dscanner-App"
-        target="_blank"
-        rel="noopener"
-        class="icon-link"
-        aria-label="Open AI D-Scanner App on GitHub"
-      >
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/>
-        </svg>
-      </a>
-
-    </div>
-
-    <p class="project-card__desc">
-      An AI-powered document scanning app designed to capture,
-      process and analyze documents with a clean and intuitive interface.
-    </p>
-
-    <ul class="project-card__features">
-      <li>AI-powered document scanning</li>
-      <li>Camera-based document capture</li>
-      <li>Automatic document processing</li>
-      <li>Clean and intuitive Android UI</li>
-    </ul>
-
-  </div>
-</article>
-
-
-      
-
-
-      
-
-      <!-- =====================================================
+            <!-- =====================================================
            Project 5: AR App
            ===================================================== -->
-      <article class="project-card">
+            <article class="project-card">
+              <a
+                class="project-card__media"
+                href="https://github.com/androidwithabhishek/AR_App"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/androidwithabhishek/AR_App/master/app/src/main/res/drawable/fiveth.jpg"
+                  alt="AR App screenshot — 3D model placed in the real world"
+                  loading="lazy"
+                  style="
+                    object-fit: contain !important;
+                    object-position: center !important;
+                  "
+                />
+              </a>
 
-        <a
-          class="project-card__media"
-          href="https://github.com/androidwithabhishek/AR_App"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/androidwithabhishek/AR_App/master/app/src/main/res/drawable/fiveth.jpg"
-            alt="AR App screenshot — 3D model placed in the real world"
-            loading="lazy"
-            style="object-fit: contain !important; object-position: center !important;"
-          >
-        </a>
+              <div class="project-card__body">
+                <div class="project-card__top">
+                  <h3 class="project-card__title">AR App</h3>
 
-        <div class="project-card__body">
+                  <a
+                    href="https://github.com/androidwithabhishek/AR_App"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="Open AR App on GitHub"
+                  >
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-          <div class="project-card__top">
+                <p class="project-card__desc">
+                  An Android application built with Jetpack Compose and
+                  SceneView, designed to display <code>.glb</code> 3D models in
+                  the real world using ARCore.
+                </p>
 
-            <h3 class="project-card__title">
-              AR App
-            </h3>
+                <ul class="project-card__features">
+                  <li>Loads and renders .glb / .gltf 3D models</li>
+                  <li>Tap-to-place objects on a detected surface</li>
+                  <li>Realistic lighting and shadow rendering</li>
+                  <li>Clean, responsive Jetpack Compose UI</li>
+                </ul>
+              </div>
+            </article>
 
-            <a
-              href="https://github.com/androidwithabhishek/AR_App"
-              target="_blank"
-              rel="noopener"
-              class="icon-link"
-              aria-label="Open AR App on GitHub"
-            >
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/>
-              </svg>
-            </a>
+            <!-- =====================================================
+     Project 3: AI D-Scanner App
+     ===================================================== -->
+            <article class="project-card">
+              <a
+                class="project-card__media"
+                href="https://github.com/androidwithabhishek/AI-Dscanner-App"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/androidwithabhishek/AI-Dscanner-App/main/screenshots/third.jpg"
+                  alt="AI D-Scanner App screenshot"
+                  loading="lazy"
+                  style="
+                    object-fit: contain !important;
+                    object-position: center !important;
+                  "
+                />
+              </a>
 
-          </div>
+              <div class="project-card__body">
+                <div class="project-card__top">
+                  <h3 class="project-card__title">AI D-Scanner App</h3>
 
-          <p class="project-card__desc">
-            An Android application built with Jetpack Compose and SceneView,
-            designed to display <code>.glb</code> 3D models in the real world
-            using ARCore.
-          </p>
+                  <a
+                    href="https://github.com/androidwithabhishek/AI-Dscanner-App"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="Open AI D-Scanner App on GitHub"
+                  >
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-          <ul class="project-card__features">
-            <li>Loads and renders .glb / .gltf 3D models</li>
-            <li>Tap-to-place objects on a detected surface</li>
-            <li>Realistic lighting and shadow rendering</li>
-            <li>Clean, responsive Jetpack Compose UI</li>
-          </ul>
+                <p class="project-card__desc">
+                  An AI-powered document scanning app designed to capture,
+                  process and analyze documents with a clean and intuitive
+                  interface.
+                </p>
 
-        </div>
-      </article>
+                <ul class="project-card__features">
+                  <li>AI-powered document scanning</li>
+                  <li>Camera-based document capture</li>
+                  <li>Automatic document processing</li>
+                  <li>Clean and intuitive Android UI</li>
+                </ul>
+              </div>
+            </article>
 
-
-      <!-- =====================================================
+            <!-- =====================================================
            Project 6: Game Search App
            ===================================================== -->
-      <article class="project-card">
+            <article class="project-card">
+              <a
+                class="project-card__media"
+                href="https://github.com/androidwithabhishek/Game_Search_App"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/game-search.jpg"
+                  alt="Game Search App screenshot — browsing a game library"
+                  loading="lazy"
+                  style="
+                    object-fit: contain !important;
+                    object-position: center !important;
+                  "
+                />
+              </a>
 
-        <a
-          class="project-card__media"
-          href="https://github.com/androidwithabhishek/Game_Search_App"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="images/game-search.jpg"
-            alt="Game Search App screenshot — browsing a game library"
-            loading="lazy"
-            style="object-fit: contain !important; object-position: center !important;"
-          >
-        </a>
+              <div class="project-card__body">
+                <div class="project-card__top">
+                  <h3 class="project-card__title">Game Search App</h3>
 
-        <div class="project-card__body">
+                  <a
+                    href="https://github.com/androidwithabhishek/Game_Search_App"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    aria-label="Open Game Search App on GitHub"
+                  >
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-          <div class="project-card__top">
+                <p class="project-card__desc">
+                  A cross-platform game search app built with Kotlin
+                  Multiplatform Mobile (KMM), powered by the RAWG Video Games
+                  Database API — shared logic across Android and iOS.
+                </p>
 
-            <h3 class="project-card__title">
-              Game Search App
-            </h3>
-
-            <a
-              href="https://github.com/androidwithabhishek/Game_Search_App"
-              target="_blank"
-              rel="noopener"
-              class="icon-link"
-              aria-label="Open Game Search App on GitHub"
-            >
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/>
-              </svg>
-            </a>
-
+                <ul class="project-card__features">
+                  <li>Search &amp; browse games via the RAWG API</li>
+                  <li>Local favorites persisted with SQLDelight</li>
+                  <li>Paginated list with Jetpack Paging</li>
+                  <li>Dependency injection with Koin</li>
+                </ul>
+              </div>
+            </article>
           </div>
+        </div>
+      </section>
 
-          <p class="project-card__desc">
-            A cross-platform game search app built with Kotlin Multiplatform
-            Mobile (KMM), powered by the RAWG Video Games Database API —
-            shared logic across Android and iOS.
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section section--muted">
+        <div class="section__inner">
+          <p class="kicker">04 · Experience</p>
+          <h2 class="section__title">Where I've worked.</h2>
+
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <div class="timeline__head">
+                  <h3 class="timeline__role">Android Developer</h3>
+                  <span class="timeline__date">Dec 2025 – Jun 2026</span>
+                </div>
+                <p class="timeline__org">Zikatwe</p>
+                <ul class="timeline__list">
+                  <li>
+                    Developed Android features using Kotlin and Jetpack Compose
+                  </li>
+                  <li>Integrated REST APIs for dynamic application data</li>
+                  <li>Developed clean and maintainable code</li>
+                  <li>Improved UI performance and responsiveness</li>
+                  <li>Fixed issues and implemented feature improvements</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <div class="timeline__head">
+                  <h3 class="timeline__role">Android Developer Intern</h3>
+                  <span class="timeline__date">Sep 2025 – Nov 2025</span>
+                </div>
+                <p class="timeline__org">AdgamaDigital</p>
+                <ul class="timeline__list">
+                  <li>
+                    Developed Android features using Kotlin and Jetpack Compose
+                  </li>
+                  <li>Built reusable UI components</li>
+                  <li>
+                    Improved application responsiveness and optimized
+                    unnecessary recompositions
+                  </li>
+                  <li>
+                    Worked with modern Android architecture and networking
+                  </li>
+                  <li>Fixed bugs and implemented feature enhancements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION & CERTIFICATION ============ -->
+      <section id="education" class="section">
+        <div class="section__inner">
+          <p class="kicker">05 · Education</p>
+          <h2 class="section__title">Education &amp; certification.</h2>
+
+          <div class="edu-grid">
+            <div class="edu-card">
+              <h3 class="edu-card__title">
+                Bachelor of Computer Applications (BCA)
+              </h3>
+              <p class="edu-card__org">IFTM University, Moradabad</p>
+              <div class="edu-card__meta">
+                <span>2022 – 2025</span>
+                <span class="edu-card__sep">·</span>
+                <span>CGPA: 7.92</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <h3 class="edu-card__title">
+                Android 14 Application Development Masterclass
+              </h3>
+              <p class="edu-card__org">Udemy</p>
+              <div class="edu-card__meta">
+                <span>Instructor: Denish Panjuta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section section--dark">
+        <div class="section__inner">
+          <p class="kicker kicker--light">06 · Contact</p>
+          <h2 class="section__title section__title--light">
+            Let's build something together.
+          </h2>
+          <p class="section__sub section__sub--light">
+            Open to Android Developer roles and freelance work. Reach out
+            through any of the channels below.
           </p>
 
-          <ul class="project-card__features">
-            <li>Search &amp; browse games via the RAWG API</li>
-            <li>Local favorites persisted with SQLDelight</li>
-            <li>Paginated list with Jetpack Paging</li>
-            <li>Dependency injection with Koin</li>
-          </ul>
-
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-  <!-- ============ EXPERIENCE ============ -->
-  <section id="experience" class="section section--muted">
-    <div class="section__inner">
-      <p class="kicker">04 · Experience</p>
-      <h2 class="section__title">Where I've worked.</h2>
-
-      <div class="timeline">
-        <div class="timeline__item">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <div class="timeline__head">
-              <h3 class="timeline__role">Android Developer</h3>
-              <span class="timeline__date">Dec 2025 – Jun 2026</span>
-            </div>
-            <p class="timeline__org">Zikatwe</p>
-            <ul class="timeline__list">
-              <li>Developed Android features using Kotlin and Jetpack Compose</li>
-              <li>Integrated REST APIs for dynamic application data</li>
-              <li>Developed clean and maintainable code</li>
-              <li>Improved UI performance and responsiveness</li>
-              <li>Fixed issues and implemented feature improvements</li>
-            </ul>
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:abhishekgupta766853@gmail.com">
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value"
+                >abhishekgupta766853@gmail.com</span
+              >
+            </a>
+            <a class="contact-card" href="tel:+917668532625">
+              <span class="contact-card__label">Phone</span>
+              <span class="contact-card__value">+91 7668532625</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://github.com/androidwithabhishek"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value"
+                >github.com/androidwithabhishek</span
+              >
+            </a>
+            <a
+              class="contact-card"
+              href="https://www.linkedin.com/in/abhishekgupta7668/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="contact-card__label">LinkedIn</span>
+              <span class="contact-card__value">in/abhishekgupta7668</span>
+            </a>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="timeline__item">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <div class="timeline__head">
-              <h3 class="timeline__role">Android Developer Intern</h3>
-              <span class="timeline__date">Sep 2025 – Nov 2025</span>
-            </div>
-            <p class="timeline__org">AdgamaDigital</p>
-            <ul class="timeline__list">
-              <li>Developed Android features using Kotlin and Jetpack Compose</li>
-              <li>Built reusable UI components</li>
-              <li>Improved application responsiveness and optimized unnecessary recompositions</li>
-              <li>Worked with modern Android architecture and networking</li>
-              <li>Fixed bugs and implemented feature enhancements</li>
-            </ul>
-          </div>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__name">© 2026 Abhishek Gupta</p>
+          <p class="footer__role">Android Developer</p>
+        </div>
+        <div class="footer__links">
+          <a
+            href="https://github.com/androidwithabhishek"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <span class="footer__sep">|</span>
+          <a
+            href="https://www.linkedin.com/in/abhishekgupta7668/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <span class="footer__sep">|</span>
+          <a href="mailto:abhishekgupta766853@gmail.com">Email</a>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ============ EDUCATION & CERTIFICATION ============ -->
-  <section id="education" class="section">
-    <div class="section__inner">
-      <p class="kicker">05 · Education</p>
-      <h2 class="section__title">Education &amp; certification.</h2>
-
-      <div class="edu-grid">
-        <div class="edu-card">
-          <h3 class="edu-card__title">Bachelor of Computer Applications (BCA)</h3>
-          <p class="edu-card__org">IFTM University, Moradabad</p>
-          <div class="edu-card__meta">
-            <span>2022 – 2025</span>
-            <span class="edu-card__sep">·</span>
-            <span>CGPA: 7.92</span>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <h3 class="edu-card__title">Android 14 Application Development Masterclass</h3>
-          <p class="edu-card__org">Udemy</p>
-          <div class="edu-card__meta">
-            <span>Instructor: Denish Panjuta</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section id="contact" class="section section--dark">
-    <div class="section__inner">
-      <p class="kicker kicker--light">06 · Contact</p>
-      <h2 class="section__title section__title--light">Let's build something together.</h2>
-      <p class="section__sub section__sub--light">
-        Open to Android Developer roles and freelance work. Reach out through any of the channels below.
-      </p>
-
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:abhishekgupta766853@gmail.com">
-          <span class="contact-card__label">Email</span>
-          <span class="contact-card__value">abhishekgupta766853@gmail.com</span>
-        </a>
-        <a class="contact-card" href="tel:+917668532625">
-          <span class="contact-card__label">Phone</span>
-          <span class="contact-card__value">+91 7668532625</span>
-        </a>
-        <a class="contact-card" href="https://github.com/androidwithabhishek" target="_blank" rel="noopener">
-          <span class="contact-card__label">GitHub</span>
-          <span class="contact-card__value">github.com/androidwithabhishek</span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/abhishekgupta7668/" target="_blank" rel="noopener">
-          <span class="contact-card__label">LinkedIn</span>
-          <span class="contact-card__value">in/abhishekgupta7668</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="footer__inner">
-    <div>
-      <p class="footer__name">© 2026 Abhishek Gupta</p>
-      <p class="footer__role">Android Developer</p>
-    </div>
-    <div class="footer__links">
-      <a href="https://github.com/androidwithabhishek" target="_blank" rel="noopener">GitHub</a>
-      <span class="footer__sep">|</span>
-      <a href="https://www.linkedin.com/in/abhishekgupta7668/" target="_blank" rel="noopener">LinkedIn</a>
-      <span class="footer__sep">|</span>
-      <a href="mailto:abhishekgupta766853@gmail.com">Email</a>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
